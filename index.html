@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Sheraz Ali Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="hero-content">
+      <nav id="navbar-example2 sticky top-0" class="navbar px-3">
+        <a class="navbar-brand" href="#"><img src="navbar logo.jpeg" alt="Sheraz Ali Developer" class="image-navbar"></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#home-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service-section" role="button">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-section" role="button">My Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs-section" role="button">FAQS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section" role="button">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-light theme-btn" id="themeToggle" onclick="toggleTheme()">🌙</button>
+        </form>
+      </nav>
+      <section id="home-section">
+        <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="hero-text col-6 mt-5 pt-5">
+              <h1>I'm Sheraz Ali</h1>
+              <p class="arrow change">I am a <strong>Web Developer</strong> and <strong>App Developer</strong> with a
+                passion for creating modern, attractive, and fully responsive digital experiences. My goal is to build
+                websites and mobile apps that are not only visually appealing but also fast, secure, and user-friendly.
+                I specialize in turning ideas into reality using HTML, CSS, JavaScript, modern frameworks, and app
+                development technologies. Along with web development, I also develop mobile applications that offer
+                smooth performance and clean UI/UX.
+                With a strong interest in both coding and design, I’m always eager to learn new technologies and improve
+                my skills to deliver high-quality digital solutions for both websites and mobile apps.</p>
+              <button class="btn btn-primary mt-3 px-4 contact-btn" data-bs-toggle="modal"
+                data-bs-target="#contactModal">
+                Contact Now
+              </button>
+            </div>
+            <div class="col-6 hero-image collapsed"><img src="sheraz ali developer.jpg"
+                alt="sheraz ali"></div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title">Contact Me</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+
+            <!-- Social Buttons -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+
+              <a href="https://wa.me/923440479279" target="_blank" class="btn btn-success">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+              </a>
+
+              <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/sheraz-ali-developer-74715938b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+              </a>
+
+              <a href="https://facebook.com/https://www.facebook.com/share/14RTLkV5rKf/" target="_blank"
+                class="btn btn-info text-white">
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook
+              </a>
+
+            </div>
+
+            <hr>
+
+            <!-- Contact Form -->
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+              <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+              <textarea rows="4" class="form-control mb-3" placeholder="Your Message"></textarea>
+
+              <button type="submit" class="btn btn-dark w-100">Send Message</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="about-section text-white" id="about-section">
+      <div class="container pt-5 pb-5">
+        <h1 class=" text-white text-center mb-4">About Me</h1>
+        <div class="row">
+          <div class="col-6 hero-image">
+            <img src="sheraz ali developer.jpg" alt="" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+          </div>
+          <div class="col-6">
+            <p>
+              I’m Sheraz Ali, a passionate and creative Web Developer dedicated to crafting modern, responsive, and
+              user-friendly digital experiences.
+              My focus is on transforming complex ideas into simple, elegant, and efficient web solutions that deliver
+              real value. <br>
+
+              I’ve worked across diverse domains — from fitness management systems and educational platforms to travel
+              applications and emerging blockchain-based technologies.
+              <br>
+              My journey in web development began with curiosity about how websites work, which has grown into a
+              deep-rooted passion for building tools that help people and businesses achieve their goals.
+              I’m a lifelong learner, always eager to explore new technologies and improve my craft with every project I
+              take on.
+            </p>
+            <div class="col-12 box1">
+              <div class="row">
+                <div class="col-1"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="col-11">
+                  <p>Versatile across different project domains</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 box1">
+              <div class="row">
+                <div class="col-1"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="col-11">
+                  <p>Committed to writing clean and efficient code</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 box1">
+              <div class="row">
+                <div class="col-1"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="col-11">
+                  <p>Focused on user experience and accessibility</p>
+                </div>
+              </div>
+            </div>
+            <!-- Scrollable modal -->
+            <button type="button" class="btn btn-info text-white mt-5 download-cv" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+              data-aos-offset="0">
+              Download-CV <i class="fa-solid fa-download"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable"> <!-- only one modal-dialog -->
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="container"> <!-- fix typo 'contianer' -->
+                      <img src="app cv.png" alt="" class="cv-img">
+                      <img src="cv.jpg" alt="" class="cv-img">
+                      <img src="cv web.png" alt="" class="cv-img">
+                      <img src="figma cv.png" alt="" class="cv-img">
+                      <img src="wordpress cv.png" alt="" class="cv-img">
+                      <img src="shopify cv.png" alt="" class="cv-img">
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="downloadBtn">Download-CV</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill-container" id="service-section">
+      <div class="container">
+        <div class="row gx-3">
+          <h1 class="h1 mt-4 mb-5 text-center text-color tw-bolded">💻 My Services</h1>
+          <div class="col-4">
+            <div class="card1  text-center service-card" data-aos="fade-up" data-aos-duration="3000"
+              data-aos="zoom-out">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-layer-group card-icon-top service-icon d-flex"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="card-heading">App <br> Development</h3>
+                <p class="card-text">I create modern, fast, and user-friendly mobile applications with clean design,
+                  smooth performance, and excellent user experience. My focus is on building scalable, high-performance
+                  apps that turn ideas into reality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card1 text-center service-card" data-aos="fade-up" data-aos-duration="3000" data-aos="zoom-out">
+              <div class="justify-content-center"><i class="fas fa-code card-icon-top service-icon"></i></div>
+              <div class="card-body">
+                <h3 class="card-heading">Full-Stack Website<br> Development</h3>
+                <p class="card-text">I build robust, secure, and efficient websites and applications, handling both
+                  front-end interfaces and back-end systems to ensure smooth performance and reliability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card1 text-center service-card" data-aos="fade-up" data-aos-duration="3000" data-aos="zoom-out">
+              <div class="d-flex justify-content-center"><i class="fab fa-figma card-icon-top service-icon"></i></div>
+              <div class="card-body">
+                <h3 class="card-heading">Figma Design</h3>
+                <p class="card-text">I craft modern, intuitive, and visually appealing UI/UX designs using Figma. From
+                  wireframes and prototypes to interactive layouts, I focus on creating seamless digital experiences
+                  that enhance user engagement and bring ideas to life with precision and creativity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container px-4 mt-5 pt-3">
+        <h1 class="h1 text-center mt-5">Technical Skills</h1>
+        <div class="row gx-5 mt-5">
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out">
+              <i class="fas icon fa-mobile-alt"></i>
+              <h5>Mobile App Development</h5>
+              <p class="small">Design and develop user-friendly mobile apps for iOS and Android with smooth performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out">
+              <i class="fas icon fa-laptop-code"></i>
+              <h5>Cross-Platform <br> Apps</h5>
+              <p class="small">Build apps that work seamlessly across multiple platforms using modern frameworks.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center ">
+            <div class="p-2 box2 pb-4" data-aos="zoom-out">
+              <i class="fas icon fa-cogs"></i>
+              <h5>App Functionality</h5>
+              <p class="small">Implement features like push notifications, offline mode, and smooth UI/UX for a better
+                experience.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center ">
+            <div class="p-3 box pb-4 " data-aos="zoom-out">
+              <i class="fas icon fa-shield-alt functi-icon"></i>
+              <h5>Secure <br> Apps</h5>
+              <p class="small">Ensure apps are secure, fast, and reliable for all users.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5 text-white">
+        <div class="row gx-5 mt-5">
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"><i class="fab icon fa-html5"></i>
+              <h5>HTML5 </h5>
+              <p class="small">Used to structure and design the basic layout of web pages.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"> <i class="fab icon fa-css3-alt"></i>
+              <h5>CSS3 </h5>
+              <p class="small">Adds color, fonts, and styling to make websites look beautiful.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"> <i class="fab icon fa-bootstrap"></i>
+              <h5>Bootstrap </h5>
+              <p class="small">A responsive framework for creating mobile-friendly websites.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"><i class="fab icon fa-js"></i>
+              <h5>JavaScript </h5>
+              <p class="small">Brings interactivity and dynamic behavior to web pages.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white mt-5">
+        <div class="row gx-5 mt-5">
+          <div class="col-3 text-center">
+            <div class="p-3 box pb-4" data-aos="zoom-out"> <i class="fab icon fa-react"></i>
+              <h5>React </h5>
+              <p class="small">A popular library for building fast, component-based UIs.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"><i class="node-icon fab icon fa-node-js"></i>
+              <h5>Node.js </h5>
+              <p class="small">A JavaScript runtime for building scalable backend servers.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box pb-1" data-aos="zoom-out"><i class=" github-icon fab icon fa-github"></i>
+              <h5>Git & GitHub </h5>
+              <p class="small">Key tools for version control and collaborative coding.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-3 box" data-aos="zoom-out"><i class="fas icon fa-database "></i>
+              <h5>MongoDB </h5>
+              <p class="small">A NoSQL database that stores data in flexible JSON-like documents.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white mt-5">
+        <div class="row gx-5 mt-5 pb-5">
+          <div class="col-3 text-center">
+            <div class="p-2 box" data-aos="zoom-out"><span class="icon python-icon">🛢</span>
+              <h5>MySQL </h5>
+              <p class="small">A relational database for storing and managing structured data.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-2 box pb-4" data-aos="zoom-out"> <i class="fab icon fa-python"></i>
+              <h5>Python </h5>
+              <p class="small">A versatile language for web development, data, and AI.</p></i>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-2 pb-4 box2" data-aos="zoom-out"> <i class="fab icon fa-wordpress"></i>
+              <h5>WordPress</h5>
+              <p class="small">A powerful CMS used to build and manage dynamic websites with ease.</p>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="p-1 box" data-aos="zoom-out"><span class="icon python-icon">⚙</span>
+              <h5>Express.js </h5>
+              <p class="small">A lightweight framework for building APIs and web apps easily.</p>
+            </div>
+          </div>
+          <hr class="mb-5 mt-5 text-white">
+          <div class="marquee-container">
+            <div class="marquee-track">
+              <i class="fas fa-mobile-alt text-success" title="Mobile App"></i>
+              <i class="fas fa-laptop-code text-info" title="Cross-Platform Apps"></i>
+              <i class="fas fa-cogs text-warning" title="App Functionality"></i>
+              <i class="fas fa-shield-alt text-danger" title="Secure Apps"></i>
+              <i class="fab fa-html5 text-danger" title="HTML5"></i>
+              <i class="fab fa-css3-alt text-primary" title="CSS3"></i>
+              <i class="fab fa-bootstrap text-purple" title="Bootstrap"></i>
+              <i class="fab fa-js text-warning" title="JavaScript"></i>
+              <i class="fab fa-react text-info" title="React"></i>
+              <i class="fab fa-node-js text-success" title="Node.js"></i>
+              <i class="fab fa-github text-dark" title="Git & GitHub"></i>
+              <i class="fas fa-database text-success" title="MongoDB"></i>
+              <span class="icon">🛢</span>
+              <i class="fab fa-python text-info" title="Python"></i>
+              <i class="fab fa-wordpress text-primary" title="WordPress"></i>
+              <span class="icon">⚙</span>
+              <i class="fab fa-figma text-pink" title="Figma"></i>
+              <i class="fab fa-shopify text-green" title="Shopify"></i>
+              <!-- Repeat icons for seamless effect -->
+              <i class="fas fa-mobile-alt text-success" title="Mobile App"></i>
+              <i class="fas fa-laptop-code text-info" title="Cross-Platform Apps"></i>
+              <i class="fas fa-cogs text-warning" title="App Functionality"></i>
+              <i class="fas fa-shield-alt text-danger" title="Secure Apps"></i>
+              <i class="fab fa-html5 text-danger" title="HTML5"></i>
+              <!-- and so on... -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="project-section" id="project-section">
+      <div class="container pt-5 pb-5">
+        <h1 class="heading1 text-center mb-5 text-white">My Projects</h1>
+        <div class="row gx-2">
+        <div class="col-md-4 p-2">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="e-comirece.jpg" class="card-img-top" alt="E-commerce website project image">
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title">E-Commerce Website</h5>
+      <p class="card-text">
+        I develop modern, fully responsive e-commerce websites with product listings,
+        cart systems, order management, and secure online payments.
+      </p>
+      <a href=" https://preview.themeforest.net/item/dukkanweb-ecommerce-website-template-using-bootstrap/full_screen_preview/31848871" class="btn btn-primary live-btn custom-hidden-btn-yellow">
+        Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+                  <div class="col-md-4 p-2">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="business image.png" class="card-img-top" alt="E-commerce website project image">
+    </div>
+              <div class="card-body ">
+                <h5 class="card-title">Business Website</h5>
+                <p class="card-text">
+                  I develop modern, fully responsive business websites that help brands build a strong online presence
+                  with elegant design and fast performance.</p>
+                <a href="https://raisheraz7181-coder.github.io/business-website/" class="btn btn-primary live-btn custom-hidden-btn-yellow">Live Demo</a>
+              </div>
+            </div>
+          </div>
+                  <div class="col-md-4">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="bloging image.png" class="card-img-top" alt="E-commerce website project image">
+    </div>
+              <div class="card-body  ">
+                <h5 class="card-title">Blogging Website</h5>
+                <p class="card-text">
+                  I develop stylish and responsive blogging websites that offer smooth navigation, SEO optimization, and
+                  easy content publishing.</p>
+                  <br>
+                <a href="#" class="btn btn-primary live-btn custom-hidden-btn-yellow">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-2 mt-3">
+                  <div class="col-md-4 p-2">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="insurence image.png" class="card-img-top" alt="E-commerce website project image">
+    </div>
+                <div class="card-body  ">
+                  <h5 class="card-title">Auto Insurance Website</h5>
+                  <p class="card-text">
+                    I develop modern, fully responsive auto insurance websites that showcase coverage plans, pricing,
+                    and support options to help users protect their vehicles with confidence.</p>
+                    <br>
+                  <a href=" https://raisheraz7181-coder.github.io/security/" class="btn btn-primary live-btn custom-hidden-btn-yellow">Live Demo</a>
+
+                </div>
+              </div>
+            </div>
+                   <div class="col-md-4 p-2">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="property image.png" class="card-img-top" alt="E-commerce website project image">
+    </div>
+                <div class="card-body  ">
+                  <h5 class="card-title">Property Website</h5>
+                  <p class="card-text">
+                    I develop modern, fully responsive property websites that showcase real estate listings, property
+                    details, and contact options to help clients find their perfect home or investment easily.</p>
+                  <a href="https://raisheraz7181-coder.github.io/Home-Renovation/" class="btn btn-primary live-btn custom-hidden-btn-yellow">Live Demo</a>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4 p-2">
+  <div class="card demo-card custom-hover-card-yellow"  data-aos="flip-right"
+                data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+
+    <div class="image-wrapper">
+      <h6 class="hover-text">
+        Built with modern technologies to deliver a scalable solution.
+        Click to explore.
+      </h6>
+
+      <img src="portfolio image.png" class="card-img-top" alt="E-commerce website project image">
+    </div>
+                <div class="card-body  ">
+                  <h5 class="card-title">Portfolio Website</h5>
+                  <p class="card-text">
+                    I create professional, responsive portfolio websites that showcase your skills, projects, and
+                    experience with a clean and creative layout.</p>
+                  <br>
+                  <a href=" https://raisheraz7181-coder.github.io/my-portfolio/" class="btn btn-primary live-btn custom-hidden-btn-yellow">Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section class="faqs-section" id="faqs-section">
+  <div class="container pb-5">
+    <h2 class="text-center mb-5 text-white">Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1">
+            Which technologies do you work with?
+          </button>
+        </h2>
+        <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            I work with HTML, CSS, JavaScript, Bootstrap, React, Node.js, and various APIs depending on project requirements.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
+            Do you build responsive websites?
+          </button>
+        </h2>
+        <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I create fully responsive websites that work perfectly on mobile, tablet, and desktop devices.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
+            Do you create custom websites?
+          </button>
+        </h2>
+        <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! I develop fully customized websites based on your business needs and goals.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
+            Are your websites SEO-friendly?
+          </button>
+        </h2>
+        <div id="answer4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I follow proper On-Page SEO practices to make websites SEO-friendly and optimized for search engines.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer5" aria-expanded="false" aria-controls="answer5">
+            How long does it take to complete a project?
+          </button>
+        </h2>
+        <div id="answer5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            A basic website usually takes 3–7 days, while more advanced projects may take additional time depending on complexity.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer6" aria-expanded="false" aria-controls="answer6">
+            Do you provide website maintenance?
+          </button>
+        </h2>
+        <div id="answer6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I offer monthly and yearly maintenance plans, including updates, bug fixes, and performance improvements.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer7" aria-expanded="false" aria-controls="answer7">
+            Do you develop e-commerce websites?
+          </button>
+        </h2>
+        <div id="answer7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I build fully functional e-commerce websites with product management, cart, checkout, and payment system integrations.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer8" aria-expanded="false" aria-controls="answer8">
+            How can I contact you?
+          </button>
+        </h2>
+        <div id="answer8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can contact me through Email, WhatsApp, or the contact form on the website.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer9" aria-expanded="false" aria-controls="answer9">
+            Do you offer SEO services?
+          </button>
+        </h2>
+        <div id="answer9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I offer complete SEO services including On-Page SEO, Off-Page SEO, and Technical SEO to improve ranking and visibility.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 10 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq10">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer10" aria-expanded="false" aria-controls="answer10">
+            Do you develop mobile applications?
+          </button>
+        </h2>
+        <div id="answer10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I develop mobile applications for both Android and iOS platforms with high-quality UI/UX and smooth performance.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 11 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq11">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer11" aria-expanded="false" aria-controls="answer11">
+            Can you improve SEO for an existing website or mobile app?
+          </button>
+        </h2>
+        <div id="answer11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I optimize the SEO of existing websites or apps, whether they are built with WordPress, Shopify, or custom code.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="contact-section" class="py-5 contact-section">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-white">Contact Me</h2>
+          <p class="text-white-50">Feel free to send me a message anytime.</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+
+          <!-- CONTACT FORM -->
+          <div class="col-md-7">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"
+                    required></textarea>
+                </div>
+              </div>
+              <button class="btn btn-warning btn-lg mt-3 px-4" type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-md-5">
+            <div class="p-4 rounded bg-secondary text-light">
+              <div class="row">
+                <div class="col-8">
+                  <h4 class="fw-semibold">Get In Touch</h4>
+                  <p class="mb-1"><strong>Email:</strong> sherazofficialdev@gmail.com</p>
+                  <p class="mb-1"><strong>Phone:</strong> +92 344 0479279</p>
+                  <p><strong>Address:</strong> Okara, Punjab, Pakistan</p>
+                  <a href="https://wa.me/923440479279" class="text-light fs-2" target="_blank"></a> <span
+                    class="whatsapp-span">
+                    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+                  </span> </a>
+
+
+                  <a href="tel:+923440479279" class="text-light fs-2"> <span class="phone-span">
+                      <i class="fa-solid fa-phone phone-icon"></i></span>
+                  </a>
+                </div>
+                <div class="col-4"><a href="mailto:sherazofficialdev@gmail.com" target="_blank"><span class="gmail-span"><i
+                        class="fa-solid fa-envelope gmail-icon ms-3"></i></span></a><br>
+                  <a href="https://wa.me/923440479279" class="text-light fs-2" target="_blank">
+                    <i class="fa-brands fa-whatsapp whatsapp-iconn mt-3 ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+
+        <div class="row justify-content-between align-items-center">
+
+          <!-- LOGO -->
+          <div class="col-md-4 mb-3">
+            <img src="footer logo.jpeg" alt="Logo" width="140"> <!-- Apni logo image ka path add karein -->
+          </div>
+
+          <!-- NAV LINKS -->
+          <div class="col-md-6 text-md-end">
+            <ul class="list-unstyled d-flex gap-4 justify-content-md-end justify-content-center m-0">
+              <li><a href="#home-section" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#about-section" class="text-light text-decoration-none">About</a></li>
+              <li><a href="#service-section" class="text-light text-decoration-none">Services</a></li>
+              <li><a href="#project-section" class="text-light text-decoration-none">My Project</a></li>
+              <li><a href="#faqs-section" class="text-light text-decoration-none">FAQS</a></li>
+              <li><a href="#contact-section" class="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM TEXT -->
+        <div class="text-center mt-4 border-top pt-3">
+          <p class="mb-0 text-white-50">
+            We provide professional <strong>Web Development</strong> and <strong>Mobile App Development</strong>
+            services with modern technology and responsive design to help businesses grow digitally.
+          </p>
+          <p class="mb-0 text-secondary">© 2025 Sheraz Ali_Congnimiatech. All Rights Reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+  <script>
+    const btn = document.getElementById("downloadBtn");
+    btn.addEventListener("click", function () {
+      alert("⚠ Warning: Your download will start soon...");
+      btn.disabled = true;
+      btn.innerHTML = `
+    Loading...
+    <div class="spinner-border spinner-border-sm text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>`;
+      setTimeout(() => {
+        btn.innerHTML = "✅ Downloaded";
+        btn.disabled = false;
+      }, 3000);
+    });
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+    const myModalAlternative = new bootstrap.Modal('#myModal', options)
+     </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

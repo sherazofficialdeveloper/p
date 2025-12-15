@@ -1,0 +1,527 @@
+.hero-image {
+    flex: 1;
+    text-align: center;
+    animation: fadeInRight 1.5s ease-in-out;
+    cursor: move;
+}
+.image-navbar{
+    width: 100px;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.main .hero-image img:hover {
+    transition: 1s;
+    box-shadow: 0 0 35px white;
+    transition: transform 1s;
+    transform: translateY(-20px);
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    transition: 1s;
+    color: #00d8ff;
+    text-shadow: 0 0 50px #00d8ff;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #00d8ff;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.hero-content {
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+}
+
+.service-icon {
+    color: #09071D;
+    font-size: 10rem;
+}
+
+.front-end-icon {
+    font-size: 2rem;
+    color: chocolate;
+}
+
+.skill-container {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: alias;
+}
+
+.card1 {
+    color: #09071D;
+    border: 1px dotted #09071D;
+    background-color: white;
+    height: 400px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.card1:hover {
+    background-color: #09071D;
+    color: white;
+    box-shadow: 0 0 25px #501201;
+    transform: rotate(45deg);
+    transition: 3s;
+}
+
+.card1:hover .service-icon {
+    transition: 1s;
+    color: white;
+    transform: scale(1.1);
+    transform: rotate(25deg);
+}
+
+.card {
+    background-color: #09071D;
+    color: white;
+}
+
+.card:hover {
+    transition: 1s;
+    background-color: #09071D;
+    color: white;
+    box-shadow: 0 0 25px #f1eceb;
+    transition: 1s;
+}
+
+.h1 {
+    color: #EA3F11;
+    font-size: 40px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.box {
+    border-radius: 15px;
+    background-color: white;
+    color: #EA3F11;
+    border-left: #EA3F11 2px solid;
+}
+
+.box2 {
+    border-radius: 15px;
+    background-color: white;
+    color: #EA3F11;
+    border-left: #EA3F11 2px solid;
+}
+
+.box2 i {
+    color: #EA3F11;
+}
+
+.box i {
+    color: #EA3F11;
+}
+
+.box2:hover {
+    transition: 1s;
+    box-shadow: 10px 10px 20px #631702;
+    background-color: #EA3F11;
+    color: white;
+}
+
+.box:hover {
+    transition: 1s;
+    box-shadow: 10px 10px 20px #631702;
+    background-color: #EA3F11;
+    color: white;
+}
+
+.box2:hover i {
+    color: white;
+    padding-bottom: 10px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.box:hover i {
+    color: white;
+    padding-bottom: 10px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.python-icon {
+    display: inline-block;
+}
+
+.box2:hover .python-icon {
+    color: white;
+    padding-bottom: 10px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.box:hover .python-icon {
+    color: white;
+    padding-bottom: 10px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.fa-circle-check {
+    font-size: 25px;
+    color: #00d8ff;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover text */
+.hover-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+/* Show on hover */
+.demo-card:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: image zoom effect */
+.demo-card:hover img {
+  transform: scale(1.05);
+  transition: 0.4s ease;
+}
+
+
+
+
+
+.custom-hover-card-yellow {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.custom-hidden-btn-yellow {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.custom-hover-card-yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 193, 7, 0.3);
+    transform: scaleY(0);
+    transform-origin: center center;
+
+    transition: transform 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.custom-hover-card-yellow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 193, 7, 0.3);
+}
+
+.custom-hover-card-yellow:hover::before {
+    transform: scaleY(1);
+}
+
+.custom-hover-card-yellow:hover .custom-hidden-btn-yellow {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+.custom-hidden-btn-yellow {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    background-color: transparent;
+    border-color: #FFC107;
+}
+
+.custom-hidden-btn-yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFC107;
+    color: white;
+    transform: scaleX(0);
+    transform-origin: center center;
+    transition: transform 0.4s ease-out;
+    z-index: -1;
+}
+
+.custom-hidden-btn-yellow:hover::before {
+    transform: scaleX(1);
+}
+
+.custom-hidden-btn-yellow:hover {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+.box1:hover {
+    transition: 1s;
+    transform: translateY(-10px);
+    transition: 1s;
+    text-shadow: 0 0 50px #00d8ff;
+}
+
+.download-cv:hover {
+    transition: 1s;
+    background-color: #024a57;
+    transform: translateY(-10px);
+    transition: 1s;
+    box-shadow: 0 0 80px #00d8ff;
+}
+
+.about-section {
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+    cursor: cell;
+}
+
+.heading1 {
+    color: black;
+    font-size: 50px;
+}
+
+.project-section {
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+    cursor: crosshair;
+}
+
+.faqs-section {
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+    cursor: ns-resize;
+}
+
+.accordion-item{
+    background-color: #09071D;
+    color: white;
+}
+
+.accordion-button {
+    background-color: #EA6100;
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #EA3F11 ;  
+  color: white;                
+}
+.functi-icon {
+    font-size: 57px;
+}
+
+.github-icon {
+    font-size: 68px;
+}
+
+.node-icon {
+    font-size: 59px;
+}
+
+.python-icon {
+    font-size: 47px;
+}
+
+.contact-section {
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+    cursor: help;
+
+}
+
+#main {
+    position: relative;
+    background: linear-gradient(to right, #EA3F11 0%, #EA6100 50%, #EA3F11 100%);
+}
+
+.whatsapp-icon {
+    color: limegreen;
+    font-size: 30px;
+}
+
+.whatsapp-span {
+    background-color: white;
+    position: fixed;
+    top: 300px;
+    right: 80px;
+    padding: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 50%;
+}
+
+.whatsapp-span:hover {
+    transition: 1s;
+    background-color: limegreen;
+    box-shadow: 0px 0px 15px white;
+    cursor: pointer;
+
+    .whatsapp-icon {
+        color: white;
+    }
+}
+
+.phone-icon {
+    color: midnightblue;
+    font-size: 30px;
+}
+
+.phone-span {
+    position: fixed;
+    top: 220px;
+    right: 80px;
+    background-color: white;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 50%;
+}
+
+.phone-span:hover {
+    transition: 1s;
+    background-color: midnightblue;
+    color: white;
+
+    .phone-icon {
+        color: white;
+    }
+
+    box-shadow: 0px 0px 15px white;
+}
+
+.gmail-icon {
+    font-size: 40px;
+}
+
+.whatsapp-iconn {
+    color: limegreen;
+    font-size: 40px;
+}
+
+.contact-btn:hover {
+    transition: 1s;
+    box-shadow: 0 0 15px rgb(14, 14, 196);
+}
+
+.live-btn:hover {
+    transition: 1s;
+    box-shadow: 0 0 15px rgb(213, 204, 223);
+}
+
+.cv-img {
+    width: 100%;
+
+}
+
+.theme-btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.4s ease;
+}
+
+.theme-btn:hover {
+    transition: 1s;
+    transform: rotate(180deg);
+}
+
+.icon-marquee {
+    font-size: 50px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #f8f9fa;
+}
+
+.marquee-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-track i,
+.marquee-track span {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 2rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* half because content is repeated */
+}
